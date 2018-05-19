@@ -1,6 +1,5 @@
 // Copyright (C) 2018, codejitsu.
 
-import play.sbt.PlayScala
 import sbt._
 import sbt.Keys._
 import sbtdocker.DockerPlugin
@@ -39,5 +38,5 @@ object Dependencies {
 
   /** Module deps */
 
-  val common = Seq(config, joda, jodaConvert, logging, logback) ++ test
+  val common = Seq(config, joda, jodaConvert, logging, logback, jackson) ++ test
 }
