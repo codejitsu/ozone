@@ -55,7 +55,7 @@ object Settings extends Build {
   )
 
   lazy val ozoneCommonSettings = Seq(
-    mainClass in assembly := Some("net.codejitsu.ozone.JsonImporter"),
+    mainClass in assembly := Some("net.codejitsu.ozone.ImporterJob"),
 
     // Resolve duplicates for Sbt Assembly
     assemblyMergeStrategy in assembly := {

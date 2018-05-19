@@ -39,5 +39,5 @@ object Dependencies {
 
   /** Module deps */
 
-  val common = Seq(config, joda, jodaConvert) ++ test
+  val common = Seq(config, joda, jodaConvert, logging, logback) ++ test
 }
