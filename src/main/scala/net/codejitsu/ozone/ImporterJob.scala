@@ -22,6 +22,8 @@ object ImporterJob extends LazyLogging {
     val dbUser = config.getString("app.output.db.user")
     val dbPassword = config.getString("app.output.db.password")
 
+    val chunkSize = config.getInt("app.output.db.chunk-size")
+
     logger.info(s"Start downloading $importerType data from: '$fileUrl' to '$tempFileName'")
 
     for {
@@ -39,6 +41,9 @@ object ImporterJob extends LazyLogging {
       _ = logger.info(s"Table successfully created: $tableCreateSuccess")
 
       importer <- ImporterFactory.create(importerType)
+      importSuccess <- importer.importData(parsedData.rows, dbUrl, dbUser, dbPassword, chunkSize)
+
+      _ = logger.info(s"Data successfully imported: $importSuccess")
     } yield {
       logger.info("All data stored.")
     }
