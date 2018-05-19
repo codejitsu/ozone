@@ -9,7 +9,7 @@ import scala.util.Try
 
 class DbConnector extends LazyLogging {
   def getType(name: String): String = name match {
-    case "number" => "INT"
+    case "number" => "DECIMAL(60,30)"
     case _ => "VARCHAR(255)"
   }
 

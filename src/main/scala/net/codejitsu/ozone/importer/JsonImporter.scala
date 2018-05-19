@@ -14,7 +14,7 @@ class JsonImporter extends Importer with LazyLogging {
          |'${row.created_meta}', '${row.updated_at}', '${row.updated_meta}',
          |'${row.meta.replace("'", "''")}', ${row.measureid}, '${row.measurename.replace("'", "''")}', '${row.measuretype.replace("'", "''")}',
          |'${row.stratificationlevel.replace("'", "''")}', '${row.statefips.replace("'", "''")}', '${row.statename.replace("'", "''")}', '${row.countyfips.replace("'", "''")}',
-         |'${row.countyname.replace("'", "''")}', '${row.reportyear}', ${Try(row.value.toInt).getOrElse(-1)}, '${row.unit.replace("'", "''")}', '${row.unitname.replace("'", "''")}',
+         |'${row.countyname.replace("'", "''")}', '${row.reportyear}', ${Try(row.value.toDouble).getOrElse(-1)}, '${row.unit.replace("'", "''")}', '${row.unitname.replace("'", "''")}',
          |'${row.dataorigin.replace("'", "''")}', ${Try(row.monitoronly.toInt).getOrElse(-1)})
          |""".stripMargin
     } mkString(",")
