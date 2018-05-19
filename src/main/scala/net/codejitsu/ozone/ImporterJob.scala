@@ -20,13 +20,15 @@ object ImporterJob extends LazyLogging {
     logger.info(s"Start downloading $importerType data from: '$fileUrl' to '$tempFileName'")
 
     for {
-      //dataFile <- new FileDownloader().download(fileUrl, tempFileName)
-      dataFile <- scala.util.Try(tempFileName)
+      dataFile <- new FileDownloader().download(fileUrl, tempFileName)
+      //dataFile <- scala.util.Try(tempFileName)
 
       _ = logger.info(s"Starting parsing data file '$tempFileName'")
       parsedData <- new DataParser(tempFileName).parseData()
 
       _ = logger.info(s"Parsed column info: ${parsedData.columns}")
+      _ = logger.info(s"${parsedData.rows.size} rows parsed")
+
       importer <- ImporterFactory.create(importerType)
     } yield {
       logger.info("All data stored.")

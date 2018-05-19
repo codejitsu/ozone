@@ -32,8 +32,8 @@ class DataParser(val fileName: String) {
       JInt(updated_at) = rowPart(5)
       JString(updated_meta) = rowPart(6)
       meta = rowPart(7) match {
-        case JString(m) => Some(m)
-        case _ => None
+        case JString(m) => m
+        case _ => "-"
       }
       JString(measureid) = rowPart(8)
       JString(measurename) = rowPart(9)
