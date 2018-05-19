@@ -8,9 +8,9 @@ object ProjectBuild extends Build {
   import Settings._
 
   lazy val root = Project(
-    id = "root",
+    id = "ozone",
     base = file("."),
-    settings = parentSettings ++ commonSettings ++ Seq(libraryDependencies ++= Dependencies.common)
+    settings = parentSettings ++ commonSettings ++ ozoneCommonSettings ++ Seq(libraryDependencies ++= Dependencies.common)
   ).enablePlugins(DockerPlugin)
 }
 
@@ -24,6 +24,7 @@ object Dependencies {
     val joda          = "joda-time"                       % "joda-time"                % JodaTimeVer
     val jodaConvert   = "org.joda"                        % "joda-convert"             % JodaTimeConvertVer
     val jackson       = "org.json4s"                     %% "json4s-jackson"           % Jackson4sVer
+    val mysql         = "mysql"                           % "mysql-connector-java"     % MySqlConnectorVer
   }
 
   object TestDeps {
@@ -38,5 +39,5 @@ object Dependencies {
 
   /** Module deps */
 
-  val common = Seq(config, joda, jodaConvert, logging, logback, jackson) ++ test
+  val common = Seq(config, joda, jodaConvert, logging, logback, jackson, mysql) ++ test
 }

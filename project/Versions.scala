@@ -16,4 +16,6 @@ object Versions {
   val Jackson4sVer            = "3.4.1"
 
   val LogbackVer              = "1.1.7"
+
+  val MySqlConnectorVer       = "5.1.46"
 }

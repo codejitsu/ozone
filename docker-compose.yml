@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+    ozone-mysql:
+      image: mysql:5.6.40
+      environment:
+        MYSQL_ROOT_PASSWORD: my-secret-pw
+        MYSQL_DATABASE: test
+
+    ozone-import:
+        image: codejitsu/ozone:0.1-SNAPSHOT
+        depends_on:
+          - ozone-mysql
+        links:
+          - ozone-mysql
+

@@ -2,6 +2,7 @@ package net.codejitsu.ozone
 
 import com.typesafe.config.ConfigFactory
 import com.typesafe.scalalogging.LazyLogging
+import net.codejitsu.ozone.db.DbConnector
 import net.codejitsu.ozone.download.FileDownloader
 import net.codejitsu.ozone.importer.ImporterFactory
 import net.codejitsu.ozone.parser.DataParser
@@ -17,6 +18,10 @@ object ImporterJob extends LazyLogging {
 
     val tempFileName = config.getString("app.input.temp-file")
 
+    val dbUrl = config.getString("app.output.db.url")
+    val dbUser = config.getString("app.output.db.user")
+    val dbPassword = config.getString("app.output.db.password")
+
     logger.info(s"Start downloading $importerType data from: '$fileUrl' to '$tempFileName'")
 
     for {
@@ -28,6 +33,10 @@ object ImporterJob extends LazyLogging {
 
       _ = logger.info(s"Parsed column info: ${parsedData.columns}")
       _ = logger.info(s"${parsedData.rows.size} rows parsed")
+      _ = logger.info("Creating table...")
+
+      tableCreateSuccess <- new DbConnector().createTable(parsedData.columns, dbUrl, dbUser, dbPassword)
+      _ = logger.info(s"Table successfully created: $tableCreateSuccess")
 
       importer <- ImporterFactory.create(importerType)
     } yield {
