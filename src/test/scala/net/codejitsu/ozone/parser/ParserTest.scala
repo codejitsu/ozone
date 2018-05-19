@@ -814,7 +814,49 @@ class ParserTest extends FunSuite with Matchers {
       |      "tags" : [ "environmental hazard", "air quality", "air quality system", "daily maximum 8 hour average concentration", "daily 24 hour average concentration", "hourly observations", "site monitoring data", "regulatory resources", "national ambient air quality standards", "caa 109: clean air act section 109", "o3", "ozone - residual", "ozone residual", "ozone", "pm2.5", "particulate matter", "particulate matter < 2.5 um", "pm fine 0-2.5 um stp", "pm2.5 - local conditions", "particulate matter - pm2.5", "air pollution", "air quality index", "oxygen", "particle pollution", "environmental health", "tracking", "tracking network", "national environmental health tracking network", "tracking program" ],
       |      "flags" : [ "default", "restorable", "restorePossibleForType" ]
       |    }
-      |  }
+      |  },
+      |  "data" : [ [ 2, "0CEF0EA4-44D1-43F9-B7A3-BA8760697583", 2, 1439356237, "925122", 1439356237, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1051", "Elmore", "1999", "5", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 3, "CA5C8F9E-7EC2-4E85-A30E-5A35FCFAACFB", 3, 1439356237, "925122", 1439356237, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1073", "Jefferson", "1999", "39", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 4, "68F7582C-A09A-46E1-AD74-B836A56BAD83", 4, 1439356237, "925122", 1439356237, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1079", "Lawrence", "1999", "28", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 5, "93AA53D9-876D-4E13-BE48-04400823ED3B", 5, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1089", "Madison", "1999", "31", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 6, "0DD294DF-6903-40A8-92A6-E306F59DB4F4", 6, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1097", "Mobile", "1999", "32", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 7, "BEA09B49-6497-49CB-AB3C-6C6BACE9F098", 7, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1101", "Montgomery", "1999", "15", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 8, "B30956B2-B42A-4095-A29E-5F220679E97B", 8, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1117", "Shelby", "1999", "45", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 9, "C28A44C9-C745-4D78-9CBB-188F1BA37120", 9, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "1", "Alabama", "1119", "Sumter", "1999", "3", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 10, "589F2287-B0EA-4149-9339-05CE5EAFA3D0", 10, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "2", "Alaska", "2068", "Denali", "1999", "0", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 11, "5DD67EC2-553B-439C-A9BD-6FFF46E9CDC3", 11, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "4", "Arizona", "4003", "Cochise", "1999", "1", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 12, "6DEC514E-F3F4-4F54-8B69-7D7354381EE4", 12, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "4", "Arizona", "4005", "Coconino", "1999", "5", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 13, "DFE129DE-DCA6-4177-9D6A-5878C1F09D33", 13, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "4", "Arizona", "4007", "Gila", "1999", "10", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 14, "8642B2B3-20B0-42E4-98F3-7BE0E83543CC", 14, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "4", "Arizona", "4013", "Maricopa", "1999", "85", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 15, "BE5F88B9-7846-46AB-83FC-86442DC710AB", 15, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "4", "Arizona", "4019", "Pima", "1999", "2", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 16, "B5ABE43C-F596-43D2-9131-229ED02F52EE", 16, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "4", "Arizona", "4025", "Yavapai", "1999", "13", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 17, "4B3E3CD5-1774-43DD-B1E3-D235E42B8181", 17, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "4", "Arizona", "4027", "Yuma", "1999", "6", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 18, "8F46E550-47BB-475C-A4E2-6D35CE981DC6", 18, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "5", "Arkansas", "5035", "Crittenden", "1999", "30", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 19, "1125862C-56E3-4744-B518-FA67EA2CD23D", 19, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "5", "Arkansas", "5097", "Montgomery", "1999", "3", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 20, "DE000936-3590-4E40-8761-628373B07043", 20, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "5", "Arkansas", "5101", "Newton", "1999", "8", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 21, "73F7A379-718F-4A54-A290-6CB8CA0F4D6D", 21, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "5", "Arkansas", "5119", "Pulaski", "1999", "15", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 22, "F9EC6A07-EAE4-46CA-B3F0-81C2EDCB067A", 22, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6001", "Alameda", "1999", "15", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 23, "9AB79EE3-17AB-48C7-A956-91A28903C680", 23, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6005", "Amador", "1999", "45", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 24, "215B3E49-6FE0-497D-BB4D-1483A005E02B", 24, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6007", "Butte", "1999", "14", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 25, "DE01DA22-6A89-4273-A696-B1BA7B2AAB43", 25, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6009", "Calaveras", "1999", "53", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 26, "248D628C-D4F3-4584-A702-86F9B0F57046", 26, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6011", "Colusa", "1999", "5", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 27, "9167011A-E692-466C-B338-906E5A44229F", 27, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6013", "Contra Costa", "1999", "8", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 28, "F6A7FE7D-A9F7-432B-8DE7-F235CFD8DF58", 28, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6017", "El Dorado", "1999", "67", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 29, "CB260D86-F32C-4395-B8E0-2060286BA32B", 29, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6019", "Fresno", "1999", "121", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 30, "F1373E40-CE98-4181-A8CA-7D02A63D54FE", 30, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6021", "Glenn", "1999", "14", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 31, "3A01F89F-24C5-4A68-B59B-EA0A22A89A41", 31, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6025", "Imperial", "1999", "34", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 32, "EDF1AEA1-5700-4E7F-B605-293BD4FAA37F", 32, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6027", "Inyo", "1999", "10", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 33, "7A5C1AFB-623E-46F1-AF71-A869C14207A2", 33, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6029", "Kern", "1999", "129", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 34, "F3ED6F8F-73C3-473B-8179-280F1E8D0679", 34, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6031", "Kings", "1999", "68", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 35, "0E05EB8C-4244-4E50-8899-F47DB21A930E", 35, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6037", "Los Angeles", "1999", "42", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 36, "49BA2447-D840-4FD9-AAA6-A5D2FD0DA297", 36, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6039", "Madera", "1999", "29", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 37, "54CBA2BC-6457-450A-BF86-E7D8CC26DB15", 37, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6041", "Marin", "1999", "1", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 38, "28461771-8362-468E-8B12-DBD26AC84FA8", 38, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6043", "Mariposa", "1999", "67", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 39, "333F253D-9188-4C58-BEEB-173620B01D6C", 39, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6047", "Merced", "1999", "77", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 40, "8F7CF5C2-DDA6-4819-86FD-6B5AE2D37BFD", 40, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6053", "Monterey", "1999", "0", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 41, "E70959CB-B267-48E6-9C05-614F8DB4D81F", 41, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6055", "Napa", "1999", "5", "No Units", "No Units", "Monitor Only", "1" ]
+      |, [ 42, "20618669-542F-4921-9A07-9F080BB33135", 42, 1439356238, "925122", 1439356238, "925122", null, "83", "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard", "Counts", "State x County", "6", "California", "6057", "Nevada", "1999", "69", "No Units", "No Units", "Monitor Only", "1" ]
+      |]
       |}
     """.stripMargin
   test("parse: get all columns metadata") {
@@ -822,8 +864,47 @@ class ParserTest extends FunSuite with Matchers {
 
     val parsed = parse(json)
 
-    val parsedMetadata = parser.toParsed(parsed)
+    val parseData = parser.toParsed(parsed)
 
-    parsedMetadata.columns.size shouldBe(14)
+    parseData.columns.size shouldBe(22)
+  }
+
+  test("parse: get all rows data") {
+    val parser = new DataParser("")
+
+    val parsed = parse(json)
+
+    val parseData = parser.toParsed(parsed)
+
+    /*
+    [
+      sid = 2,
+      id = "0CEF0EA4-44D1-43F9-B7A3-BA8760697583",
+      position = 2,
+      created_at = 1439356237,
+      created_meta = "925122",
+      updated_at = 1439356237,
+      updated_meta = "925122",
+      meta = null,
+      measureid = "83",
+      measurename = "Number of days with maximum 8-hour average ozone concentration over the National Ambient Air Quality Standard",
+      measuretype = "Counts",
+      stratificationlevel = "State x County",
+      statefips = "1",
+      statename = "Alabama",
+      countyfips = "1051",
+      countyname = "Elmore",
+      reportyear = "1999",
+      value = "5",
+      unit = "No Units",
+      unitname = "No Units",
+      dataorigin = "Monitor Only",
+      monitoronly = "1"
+     ]
+    */
+
+    //parseData.rows.foreach(println)
+
+    parseData.rows.size shouldBe(41)
   }
 }
